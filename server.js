@@ -16,6 +16,9 @@ app.use(bodyParser.json());
 // DB config
 const db = require('./config/keys').mongoURI;
 
+mongoose.set('useCreateIndex', true);
+mongoose.set('useFindAndModify', false);
+
 // Connect to MongoDB
 mongoose
   .connect(
