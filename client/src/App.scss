@@ -1,5 +1,19 @@
 img {
   width: 100%;
+
+  &.avatar {
+    width: 32px;
+    margin-right: 8px;
+  }
+}
+
+.avatar-btn {
+  background: none;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .landing {

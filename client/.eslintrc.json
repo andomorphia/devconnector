@@ -2,16 +2,21 @@
   "env": {
     "browser": true
   },
-  "extends": ["airbnb", "plugin:prettier/recommended"],
   "parser": "babel-eslint",
+  "extends": ["airbnb", "plugin:prettier/recommended"],
   "plugins": ["prettier"],
   "rules": {
     "prettier/prettier": "error",
-    "react/prefer-stateless-function": 0,
     "react/jsx-filename-extension": [
       "error",
       {
         "extensions": [".js", ".jsx"]
+      }
+    ],
+    "dot-notation": [
+      "error",
+      {
+        "allowPattern": "(Authorization)"
       }
     ]
   }
